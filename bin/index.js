@@ -20,7 +20,11 @@ Run the script to host your package manager Walter.
   app.all('*', function(req, res) {
     var args = req.url.split("/");
     if(!args[0] == "job") {
-      
+      if(!typeof wconfig.callback == "undefined") {
+        require(path.join("../"), wconfig.callback)(req, res);
+      } else {
+        
+      }
     }
   })
 })()
