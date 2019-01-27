@@ -2,7 +2,9 @@ var wconfig = require("walt-config.js"),
     glob = require("glob"),
     fs = require("fs"),
     path = require("path"),
-    express = require("express");
+    express = require("express"),
+    chalk = require("chalk"),
+    werror = require("walt-error.js")
 
 /*
 有关此脚本的完整文档，请参阅GitHub wiki。
@@ -20,10 +22,10 @@ Run the script to host your package manager Walter.
   app.all('*', function(req, res) {
     var args = req.url.split("/");
     if(!args[0] == "job") {
-      if(!typeof wconfig.callback == "undefined") {
+      if(!typeof wconfig.reroute == "undefined") {
         require(path.join("../"), wconfig.callback)(req, res);
       } else {
-        
+        console.log("WALTER" + chalk.red("!ERR") + "")
       }
     }
   })
