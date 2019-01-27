@@ -2,7 +2,7 @@
   "name": "walter",
   "version": "1.0.0",
   "description": "Simple and fast package management",
-  "main": "index.js",
+  "main": "bin/index.js",
   "dependencies": {
     "express": "^4.16.4",
     "glob": "^7.1.3"
