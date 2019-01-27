@@ -24,8 +24,10 @@ Run the script to host your package manager Walter.
       if(!typeof wconfig.reroute == "undefined") {
         require(path.join("../"), wconfig.callback)(req, res);
       } else {
-        werror("error")
+        werror("error", "ReRoute not called, showing default page.")
       }
+    } else {
+      
     }
   })
 })()
