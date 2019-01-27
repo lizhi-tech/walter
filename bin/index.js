@@ -3,8 +3,7 @@ var wconfig = require("walt-config.js"),
     fs = require("fs"),
     path = require("path"),
     express = require("express"),
-    chalk = require("chalk"),
-    werror = require("walt-error.js")
+    werror = require("walt-error.js");
 
 /*
 有关此脚本的完整文档，请参阅GitHub wiki。

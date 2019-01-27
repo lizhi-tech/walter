@@ -4,6 +4,7 @@
   "description": "Simple and fast package management",
   "main": "bin/index.js",
   "dependencies": {
+    "chalk": "^2.4.2",
     "express": "^4.16.4",
     "glob": "^7.1.3"
   },
