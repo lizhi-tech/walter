@@ -17,7 +17,10 @@ Run the script to host your package manager Walter.
   var filesPath = wconfig.filesPath;
 
   var app = express();
-  app.get('*', function(req, res) {
-    var arguments = req.url.split("/");
+  app.all('*', function(req, res) {
+    var args = req.url.split("/");
+    if(!args[0] == "job") {
+      
+    }
   })
 })()
