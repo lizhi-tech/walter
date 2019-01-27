@@ -24,7 +24,7 @@ Run the script to host your package manager Walter.
       if(!typeof wconfig.reroute == "undefined") {
         require(path.join("../"), wconfig.callback)(req, res);
       } else {
-        console.log("WALTER" + chalk.red("!ERR") + "")
+        werror("error")
       }
     }
   })

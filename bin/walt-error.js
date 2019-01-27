@@ -2,7 +2,7 @@ var chalk = require("chalk");
 
 module.exports = function(type, text) {
   "use strict";
-
+  
   if(type == "error") {
     console.log("WALTER " + chalk.red("!ERR") + " " + text);
   } else if(type == "warning") {
