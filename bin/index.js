@@ -15,16 +15,12 @@ Run the script to host your package manager Walter.
 */
 
 (function() {
-  var express    = require('express')
-  var serveIndex = require('serve-index')
+  var express = require('express');
+  var serveIndex = require('serve-index');
+  var app = express();
 
-  var app = express()
+  app.use('/public', serveIndex('files')); // shows you the file list
+  app.use('/public', express.static('files')); // serve the actual files
 
-  // Serve URLs like /ftp/thing as public/ftp/thing
-  // The express.static serves the file contents
-  // The serveIndex is this module serving the directory
-  app.use('/job', express.static('files'), serveIndex('public/ftp', {'icons': true}))
-
-  // Listen
   app.listen(3000)
 })()
