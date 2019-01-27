@@ -1,0 +1,40 @@
+{
+  "name": "walter",
+  "version": "1.0.0",
+  "description": "Simple and fast package management",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lizhi-tech/walter.git"
+  },
+  "keywords": [
+    "walter",
+    "tech",
+    "li",
+    "zhi",
+    "lizhi",
+    "test",
+    "file",
+    "management",
+    "package",
+    "simple",
+    "tools",
+    "toolkit",
+    "tool",
+    "sample",
+    "chinese"
+  ],
+  "author": "LiZhi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lizhi-tech/walter/issues"
+  },
+  "homepage": "https://github.com/lizhi-tech/walter#readme"
+}
