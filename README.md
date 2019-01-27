@@ -1,2 +1,2 @@
 # walter
-Simple and fast file management | 简单快速的文件管理
+Simple and fast package management | 简单快速的包管理
