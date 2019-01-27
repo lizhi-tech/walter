@@ -14,5 +14,5 @@ Run the script to host your package manager Walter.
 */
 
 (function() {
-
+  var filesPath = wconfig.filesPath;
 })()
